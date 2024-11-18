@@ -1,0 +1,35 @@
+Hw to make a responsive webpage
+1) Flexible Images and Media
+Ensure that the images in webpage as properly scaled within their containers.
+You can use CSS properties like "max-width: 100%;" and "height: auto;".
+2) Use Media Query
+3) Include Meta Tag with viewport
+The viewport meta tag inside HTML head to ensures proper scaling and rendering on mobile devices.
+4) Use Relative Units
+Use relative units like em, rem, or percentages for font sizes,
+padding, and margins to ensure that text scales appropriately.
+
+Setting Viewport for Responsive Design
+The viewport represents the visible area of user's device.
+The content that is outside of the viewport can be seen if scrolled.
+It helps web pages’ render well on different devices by controlling the width and scale of the page.
+
+To control the viewport, add the following <meta> tag in the <head> section:
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+The above tag tells the browser to match the page width to the 
+screen's width and set the initial zoom level when the page is first loaded by the user.
+We can adjust viewport settings for width, initial-scale, maximum-scale, minimum-scale, and user-scalable.
+These adjustments can make our website more accessible and user-friendly.
+
+HTML <meta> viewport tag Attributes
+The following attributes of <meta> viewport tag are used for responsiveness:
+
+Attribute	Description
+width	It controls the width of the virtual viewport.
+height	It controls the height of the virtual viewport.
+initial-scale	It specifies the initial zoom level of the viewport when a web page is first loaded.
+minimum-scale	It specifies the minimum zoom level to which the user can zoom the page.
+maximum-scale	It defines the maximum zoom level to which the user can zoom the page.
+user-scalable	It specifies whether the user can zoom in or out.
+interactive-widget	It defines how the interactive UI widgets affect the viewport.
