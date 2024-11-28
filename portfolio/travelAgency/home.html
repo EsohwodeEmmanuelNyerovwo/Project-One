@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Solutions</title>
+    <link rel="shortcut icon" href="logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <div>
+                <a class="navbar-brand fs-5 fw-bold" href="#"><img src="logo.jpg" alt="" width="100" height="100"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  <li class="nav-item">
+                    <a class="nav-link active fs-5" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Destinations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Tours</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link fs-5" href="#">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <section class="hero">
+        <div class="row">
+            <div class="col-12 hero-img">
+                <div class="hero-div">
+                    <h2>Travel Solutions</h2>
+                    <p>Our Clients First</p>
+                    <button>Book now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="destination">
+        <div class="row">
+            <div class="col-12">
+                <div class="row">
+                    <div class="card-group">
+                        <div class="card">
+                          <img src="./spanishIsland.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Spanish Island</p>
+                            <p class="card-text"> this beach is known for its calm, clear waters, pine forests, and rocks</p>
+                            <p class="card-text card-btn"><small class="text-body-secondary"><button>Learn More</button></small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="./spanishIsland2.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">Pristine beach</p>
+                            <p class="card-text">A pristine beach on the island of Formentera, which has fewer tourists than Ibiza</p>
+                            <p class="card-text card-btn"><small class="text-body-secondary"><button>Learn More</button></small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="./spanishIsland3.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <p class="card-text">A seashell-shaped beach with golden sand, a promenade, and refreshing waters</p>
+                            <p class="card-text card-btn"><small class="text-body-secondary"><button>Learn More</button></small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="tour container">
+        <div class="row">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Travel Solutions
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Lorem ipsum dolor sit amet.</strong> 
+                      It is shown by default, until the collapse plugin adds the appropriate classes that we
+                       use to style each element. These classes control the overall appearance, 
+                       as well as the showing and hiding via CSS transitions. 
+                       You can modify any of this with custom CSS or overriding our default variables. 
+                       It's also worth noting that just about any HTML can go within the 
+                       <code>.accordion-body</code>, though the transition does limit overflow.
+                       <a href="#">View Details</a>
+                    </div>
+                  </div>
+                </div>         
+              </div>
+        </div>
+    </section>
+    <section class="contact container">
+        <form>
+            <fieldset disabled>
+              <legend>Contact me</legend>
+              <div class="mb-3">
+                <label for="disabledTextInput" class="form-label">Enter Name</label>
+                <input type="text" id="disabledTextInput" class="form-control" placeholder="Enter Name...">
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="disabledSelect" class="form-label">Destination Of Interest</label>
+                <select id="disabledSelect" class="form-select">
+                  <option>spanishIsland</option>
+                  <option>Carreabean Island</option>
+                  <option>Mosco</option>
+                  <option>Lagos Island</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </fieldset>
+          </form>
+    </section>
+    <footer class="container-fluid footer">
+      <div class="txt row">
+        <p>&copy; All Rights Reserved | Esohwode Emmanuel</p>
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
