@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    /* background-color: rebeccapurple; */
+    width: 99%;
+    margin: auto;
+    height: 35vh;
+}
+.headDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+.txt-search{
+    padding: 10px 15px;
+    border: none;
+    border-bottom: 1px solid coral;
+    border-radius: 7px;
+    color: coral;
+}
+.headDiv span{
+    font-style: italic;
+}
+h1,.logIn,.cart{
+    color: coral;
+}
+.social-icons a{
+    color: #000;
+    display: inline-block;
+    margin-right: 5px;
+}
+.left-head-div{
+    display: flex;
+    align-items: center;
+}
+.logIn,.cart{
+    margin: 0 20px 0 20px;
+    font-size: 1.5rem;
+}
+nav{
+    display: flex;
+    justify-content: center;
+}
+nav a{
+    display: inline-block;
+    color: #000;
+    margin-right: 35px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav a:hover{
+    color: coral;
+}
+.hero{
+    background-image: url("../img/hero-pix.avif");
+    width: 100%;
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hero h2{
+    color: #2b2828;
+    font-size: 5rem;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.hero a{
+    border: 1px solid #fff;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #2b2828;
+    padding: 8px 20px;
+}
+.hero a:hover{
+    background-color: #fff;
+    color: coral;
+}
+.show-case{
+    padding-top: 140px;
+    height: 100vh;
+}
+.show-case p:first-child{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.border{
+    border: 1px solid #000;
+    width: 34px;
+    height: 5px;
+    margin: auto;
+    margin-bottom: 120px;
+    background-color: #000;
+}
+.show-case-img{
+    display: flex;
+}
+.show-case-img div{
+    width: 60%;
+    margin: auto;
+}
+.desc{
+    color: #000;
+}
+.desc,.price{
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 2rem;
+}
+footer{
+    height: 10vh;
+    background-color: rgb(199, 205, 212);
+    text-align: center;
+    padding-top: 35px;
+    font-size: 1.2rem;
+}
+.footer-text span{
+    border-bottom: 1px solid #000;
+}
+@media(max-width:889px){
+    .headDiv{
+        flex-direction: column;
+    }
+    .left-head-div{
+        flex-direction: column;
+    }
+    .show-case-img{
+        flex-direction: column;
+        min-height: 50vh;
+    }
+    footer{
+        display: none;
+    }
+}
