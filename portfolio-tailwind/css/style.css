@@ -1,0 +1,135 @@
+h1{
+    text-shadow: 0 0 3px #FF0000;
+}
+nav{
+    align-items:center
+}
+.active{
+    background-color:gray;
+    color:#fff;
+}
+.hero{
+    width:80%;
+    margin-left:300px;
+    margin-top:150px;
+}
+.hero-img{
+    /* background-image:url('../portfolio/portfolioPractice/malePix.jpg'); */
+    width:500px;
+    height:500px;
+}
+.my-info{
+    flex-direction:column;
+    margin-top:10rem;
+    padding-right:10rem;
+    margin-left:5rem;
+}
+.my-info p:first-child{
+    margin-left:180px;
+}
+.my-info h2{
+    margin-bottom:10px;
+    margin-left:60px;
+    font-weight:bold;
+}
+.status{
+    margin-bottom:40px;
+}
+.status span{
+    text-shadow: 0 0 3px #FF0000;
+}
+.links{
+    margin-left:150px;
+}
+.links a{
+    display:inline-block;
+    margin-right:30px;
+    font-weight:bold;
+    padding:8px 12px;
+    background-color:gray;
+    cursor:pointer;
+}
+.links a:hover{
+    box-shadow: 5px 5px #000, 10px 10px #000, 15px 15px gray;
+}
+.skill{
+    height:60vh;
+}
+.skillz{
+    display:flex;
+    gap:8px;
+    justify-content:space-around;
+}
+.my-skill{
+    border:1px solid #000;
+    width:350px;
+    height:300px;
+    border-radius:5px;
+}
+.my-skill h2{
+    text-align:center;
+    margin-top:30px;
+    margin-bottom:25px;
+    font-size:2rem;
+    text-transform:uppercase;
+}
+.my-skill p{
+    margin-bottom:25px;
+    text-align:justify;
+}
+.my-skill a{
+    display:inline-block;
+    margin-left:100px;
+    background:gray;
+    padding:8px 12px;
+    color:#000;
+    font-size:25px;
+    border-radius:30px
+}
+.my-skill a:hover{
+    box-shadow: 0 0 25px gray;
+}
+.contact{
+    /* background:gray; */
+    height:70vh;
+}
+form{
+    padding-top:55px;
+    width:500px;
+}
+.txt{
+    display:block;
+    width:100%;
+    margin-left:520px;
+    margin-bottom:45px;
+    background:gray;
+}
+.name,.email{
+    padding:10px;
+}
+.submit{
+    background:#000;
+    color:#fff;
+    padding:12px 0;
+    font-size:1.4rem;
+    cursor:pointer;
+}
+footer{
+    background:#000;
+    color:#fff;
+    height:30vh;
+}
+.foot{
+    padding-top:140px;
+}
+.social-icons{
+    margin-bottom:10px;
+    margin-left:570px;
+}
+.social-icons a{
+    margin-left:50px;
+}
+.foot p{
+    font-size:2rem;
+    margin-left:420px;
+}
