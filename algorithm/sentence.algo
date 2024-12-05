@@ -1,0 +1,37 @@
+
+/*An Algorithm that reads a sentence which ends with a point character by character and to determine
+a)The length of the sentence (the number of characters).
+b)The number of words in the sentence(assuming that the words are seperated by a single space).
+c)The number of vowels.
+*/
+//a)The length of the sentence (the number of characters).
+let sen = 'I am going to school.';
+let len = sen.length;
+let total = 0;
+FOR i FROM 0 TO len - 1 STEP 1  DO
+    total += i;
+END_FOR
+Write(total);
+let i = 0
+WHILE (i < len) DO
+    total += i;
+    i++;
+END_WHILE
+Write(total);
+//b)The number of words in the sentence(assuming that the words are seperated by a single space).
+WHILE (i < len) DO
+    IF (sen[i] != "") THEN
+        total += i;
+    END_IF
+    i++;
+END_WHILE
+Write(total);
+//c)The number of vowels.
+WHILE (i < len) DO
+    IF (sen[i] == "a" || sen[i] == "A" || sen[i] == "e" || sen[i] == "E"|| sen[i] == "i" || sen[i] == "I" ||
+    sen[i] == "o"|| sen[i] == "O" || sen[i] == || "u" || sen[i] == "U") THEN
+        total += i;
+    END_IF
+    i++;
+END_WHILE
+Write(total);
