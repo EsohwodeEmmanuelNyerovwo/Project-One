@@ -6,6 +6,7 @@
     <title>Addition Of Even Numbers</title>
 </head>
 <body>
+    <p id="para"></p>
     <script>
         let sum = 0;
         for(let i = 0; i <= 10; i++){
@@ -13,7 +14,8 @@
                 sum += i;
             }
         }
-        console.log(sum);
+        document.getElementById('para').innerHTML = sum
+        // console.log(sum);
     </script>
 </body>
 </html>
