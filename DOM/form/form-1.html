@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div>
+        <form action="" name="loginForm" onsubmit="return validateForm(event)">
+            <label for="name">Name:</label>
+            <p>
+            <input type="text" name="name" placeholder="example@example.com" />
+            </p>
+            <label for="password">Password</label>
+            <p>
+            <input type="password" name="password" placeholder="">
+            </p>
+            <button type="submit">Login</button>
+            <button type="reset">Cancel</button>
+        </form>
+    </div>
+    <script src="form-js-1.js"></script>
+</body>
+</html>

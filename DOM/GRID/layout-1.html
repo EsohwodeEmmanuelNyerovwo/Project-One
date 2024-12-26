@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRID Layout</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .container{
+            background-color: green;
+            height: 100vh;
+            color: #fff;
+            display: grid;
+            grid-template-areas: 'Navbar Navbar Navbar'
+                                    'Sidebar Main Main'
+                                    'Sidebar box1 box2'
+                                    'Sidebar footer footer';
+            grid-gap: .6rem;
+            font-size: 2rem;
+            text-align: center;
+            grid-template-columns: 0.8fr 1fr 1fr;
+            grid-template-rows: 0.8fr 2.5fr 1.5fr 0.8fr;
+        }
+        nav{
+            background-color: #16a085;
+            grid-area: Navbar;
+        }
+        .sidebar{
+            background-color: antiquewhite;
+            grid-area: Sidebar;
+        }
+        .main{
+            background-color: bisque;
+            grid-area: Main;
+        }
+        .box1{
+            background-color: blueviolet;
+            grid-area: box1;
+        }
+        .box2{
+            background-color: rebeccapurple;
+            grid-area: box2;
+        }
+        footer{
+            background-color: brown;
+            grid-area: footer;
+        }
+        @media(max-width:640px){
+            .container{
+                grid-template-areas: 'Navbar'
+                                        'Sidebar'
+                                        'Main'
+                                        'box1'
+                                        'box2'
+                                        'footer';
+            grid-template-columns: 1fr;
+            grid-template-rows: .5fr 1.2fr .5fr 1fr .5fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>Navbar</nav>
+        <div class="main">Main</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="box1">Box 1</div>
+        <div class="box2">Box 2</div>
+        <footer>Footer</footer>
+    </div>
+</body>
+</html>

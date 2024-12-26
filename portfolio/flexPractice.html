@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Practice</title>
+    <style>
+        .parent{
+            display: flex;
+        }
+        .firstDiv{
+            width: 50%;
+            height: 450px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .box{
+            width: 280px;
+            height: 200px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+        .innerContainer{
+            width: 48%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-left: 10px;
+        }
+        @media screen and (max-width:600px) {
+            .parent{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Practice media queries -->
+    <div class="parent">
+        <div class="firstDiv"></div>
+        <div class="innerContainer">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+    </div>
+</body>
+</html>

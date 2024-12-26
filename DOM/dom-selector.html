@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selector</title>
+    <!-- <script>
+        console.log(document);
+    </script> -->
+</head>
+<body>
+    <!-- Document interface represents any loaded web page in the browser and 
+     serves as an entry point into the webpage's content, this is the DOM tree. 
+    -->
+    <div id="main">
+        <h1>Hello From Mars!</h1>
+        <span class="txt" id="main-para">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, deleniti.
+        </span>
+        <span id="without-style">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, deleniti.
+        </span>
+        <span class="txt">
+            Second span: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore, deleniti.
+        </span>
+        <button type="button" id="btn">Click Me</button>
+    </div>
+    <button onclick="foo()">Alert</button>
+    <div id="main-div">
+        <button id="add-btn">Alert</button>
+    </div>
+    <p>Try pressing some keys:</p>
+    <p id="log"></p>
+    <script>
+        document.addEventListener('keydown',logKey);
+        function logKey(event) {
+            var k = document.getElementById('log');
+            k.textContent += " " + event.code;
+            // log.textContent += " " + event.code;
+            console.log(event.code);
+        }
+        // function add() {
+        //     var p = document.getElementById('log');
+        //     p.textContent = 2+2;
+        //     // alert(2+2);
+        // }
+        // function foo() {
+        //     alert('Hello');
+        // }
+        // var btnEg = document.querySelector('#add-btn');
+        // btnEg.addEventListener('click',add);
+        // btnEg.removeEventListener('click',add);
+        // btn.onclick = foo;
+        // var elem = document.getElementById('main');
+        // var btn = document.getElementById('btn');
+        // elem.removeChild(btn);
+        // console.log(elem);
+        // // elem.innerHTML = '<p>This is <em>newly inserted </em>paragraph</p>';
+        // console.log(elem);
+        // var newDiv = document.createElement('div');
+        // var newContent = document.createTextNode('I am a div');
+        // newDiv.appendChild(newContent);
+        // var currentDiv = document.getElementById('main');
+        // currentDiv.style.backgroundColor = 'gold';
+        // currentDiv.appendChild(newDiv);
+        // document.body.appendChild(newDiv,currentDiv);
+        // let btn = document.getElementById('btn');
+        // btn.style.color = 'white';
+        // btn.style.backgroundColor = 'black';
+        // btn.style.fontWeight = 'bold';
+        // btn.style.padding = '8px 20px';
+        // console.log(btn);
+        // btn.setAttribute('class','click-btn');
+        // btn.setAttribute('disabled','');
+        // btn.removeAttribute('class');
+        // console.log(btn);
+        // var mainPara = document.getElementById('main-para');
+        // console.log(mainPara);
+        // var elClassName = mainPara.getAttribute('class');
+        // console.log(elClassName);
+        // var el = document.getElementsByTagName('span');
+        // console.log(el);
+        // var el = document.getElementsByClassName('txt');
+        // console.log(el);
+        // console.log(el[1]);
+        // var el = document.getElementById('middleSpan');
+        // console.log(el);
+        // var el = document.querySelector('h1');
+        // console.log(el);
+        // var el = document.querySelectorAll('span');
+        // console.log(el);
+        // console.log(el[1]);
+    </script>
+</body>
+</html>

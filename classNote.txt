@@ -128,3 +128,160 @@ Use the link as below
 - git push
 A repository is any file that git is tracking. Any file with .git
 We can only ignore untracked files.The moment u track a file u can't ignore
+
+ Directory of C:\Users\EMMANUEL\Desktop\GOMYCODE
+
+11/18/2024  04:00 PM    <DIR>          .        
+11/18/2024  04:00 PM    <DIR>          ..
+11/15/2024  02:12 PM             6,495 classNote.txt
+11/18/2024  05:44 PM             2,539 classPractice.html
+11/18/2024  11:12 AM           137,233 emmy.jpg
+11/15/2024  03:48 PM            15,070 htmlNote.txt
+11/16/2024  07:57 PM             1,542 htmlNote2.txt
+11/18/2024  11:49 AM            67,773 instagram.jpg
+11/14/2024  03:15 PM    <DIR>          learn_git
+11/22/2024  11:46 AM    <DIR>          portfolio
+11/18/2024  11:45 AM    <DIR>          projectOne
+11/17/2024  02:32 PM             1,961 responsivewebpage.txt
+11/18/2024  02:23 PM    <DIR>          styles
+               7 File(s)        232,613 bytes
+               6 Dir(s)  66,768,801,792 bytes free
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>cd portfolio
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>dir     
+ Volume in drive C has no label.
+ Volume Serial Number is 826C-0F92
+
+ Directory of C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio
+
+11/22/2024  11:46 AM    <DIR>          .
+11/22/2024  11:46 AM    <DIR>          ..
+11/21/2024  12:52 PM    <DIR>          css
+11/22/2024  11:14 AM             1,230 flexPractice.html
+11/23/2024  10:31 AM             3,414 home.html
+11/23/2024  07:21 AM    <DIR>          portfolioPractice
+11/18/2024  01:51 PM             2,223 restaurant.html
+               3 File(s)          6,867 bytes
+               4 Dir(s)  66,768,470,016 bytes free
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>git add home.html
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>git commit -m "css portfolio"
+[main 5612858] css portfolio
+ 1 file changed, 55 insertions(+), 50 deletions(-)
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>git remote add origin https://github.com/EsohwodeEmmanuelNyerovwo/portfo
+lio.git
+error: remote origin already exists.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>git branch -m main
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>git remote add origin https://github.com/EsohwodeEmmanuelNyerovwo/portfo
+lio.git
+error: remote origin already exists.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>git push -u origin main
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.38 KiB | 708.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/EsohwodeEmmanuelNyerovwo/Project-One.git
+   199d302..5612858  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>
+ *  History restored 
+
+Microsoft Windows [Version 10.0.19045.5131]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>cd desktop
+The system cannot find the path specified.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>cd .
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>cd desktop/GOMYCODE/portfolio/travelAgency
+The system cannot find the path specified.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE>cd portfolio
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio>cd travelAgency
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio\travelAgency>git add .
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio\travelAgency>git commit "TravelAgency"
+error: pathspec 'TravelAgency' did not match any file(s) known to git
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio\travelAgency>git commit -m "TravelAgency"
+[main 851b891] TravelAgency
+ 8 files changed, 264 insertions(+)
+ create mode 100644 portfolio/travelAgency/css/style.css
+ create mode 100644 portfolio/travelAgency/hero-img.png
+ create mode 100644 portfolio/travelAgency/home.html
+ create mode 100644 portfolio/travelAgency/logo.jpg
+ create mode 100644 portfolio/travelAgency/spanishIsland.jpg
+ create mode 100644 portfolio/travelAgency/spanishIsland2.jpg
+ create mode 100644 portfolio/travelAgency/spanishIsland3.jpg
+ create mode 100644 portfolio/travelAgency/travelAgencyHeroSection.jpg
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio\travelAgency>git branch -m main
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio\travelAgency>git push -u origin main
+Enumerating objects: 15, done.
+Counting objects: 100% (15/15), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (13/13), 7.64 MiB | 320.00 KiB/s, done.
+Total 13 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/EsohwodeEmmanuelNyerovwo/Project-One.git
+   5612858..851b891  main -> main
+branch 'main' set up to track 'origin/main'.
+
+C:\Users\EMMANUEL\Desktop\GOMYCODE\portfolio\travelAgency>

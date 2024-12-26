@@ -1,0 +1,29 @@
+body{
+    font-family: "Roboto",sans-serif;
+}
+header{
+    background-image: linear-gradient(180deg,#c4b6fd,#93acfc);
+}
+.nav-link{
+    font-weight: 500;
+}
+.btn-primary{
+    background-color: #0a58ca !important;
+    border: none;
+}
+.nav-link:hover{
+    color: #0a58ca;
+}
+p{
+    font-size: 12px;
+}
+.btn-primary{
+    background-color: #257dfd !important;
+}
+.blue-bg{
+    background-color: #0858ca;
+    color: #fff;
+}
+.text-primary{
+    color: #257dfd;
+}

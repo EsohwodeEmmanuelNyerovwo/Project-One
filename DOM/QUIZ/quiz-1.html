@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ App</title>
+</head>
+<body>
+    <!-- <div id="genderSec">
+        <div>Select Gender</div>
+        <hr>
+        <input onchange="onGenderChange(event)" type="radio" name="gender" value="Male" checked id="">Male
+        <input onchange="onGenderChange(event)" type="radio" name="gender" value="Female" id=""> Female
+    </div>
+    <div class="message">
+        Selected Gender: <span id="selectedGender"></span>
+    </div> -->
+    <h2>Click the circles to choose answer of your choice:</h2>
+    <form action="" name="quiz" onsubmit="" id="formQuiz">
+        <div>
+            <p>What is 2 + 2?</p>
+            <span>A</span><input type="radio" class="ques" name="question" value="2"><span>2</span><br>
+            <span>B</span><input type="radio" class="ques" name="question" value="4" id="correct1"><span>4</span><br>
+            <span>C</span><input type="radio" class="ques" name="question" value="5"><span>5</span>
+        </div>
+        <div>
+            <p>What is the capital of Delta State?</p>
+            <span>A</span><input type="radio" class="ques" name="capital" value="Asaba" id="correct2"><span>Asaba</span><br>
+            <span>B</span><input type="radio" class="ques" name="capital" value="Kogi"><span>Kogi</span><br>
+            <span>C</span><input type="radio" class="ques" name="capital" value="Abuja"><span>Abuja</span>
+        </div>
+        <div>
+            <p>What is the capital of Edo State?</p>
+            <span>A</span><input type="radio" class="ques" name="cap" value="Asaba"><span>Asaba</span><br>
+            <span>B</span><input type="radio" class="ques" name="cap" value="Benin"><span>Kogi</span><br>
+            <span>C</span><input type="radio" class="ques" name="cap" value="Abuja" id="correct3"><span>Benin</span>
+        </div>
+        <div>
+            <p>Which angle is three sided?</p>
+            <span>A</span><input type="radio" class="ques" name="threeSided" value="Triangle" id="correct4"><span>Triangle</span><br>
+            <span>B</span><input type="radio" class="ques" name="threeSided" value="Square"><span>Square</span><br>
+            <span>C</span><input type="radio" class="ques" name="threeSided" value="Rectangle"><span>Rectangle</span>
+        </div>
+        <button type="button" onclick="calculate()">Calculate</button>
+    </form>
+    <script src="quiz-1.js">Submit</script>
+</body>
+</html>

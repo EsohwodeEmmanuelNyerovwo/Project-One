@@ -5,9 +5,11 @@ b)The number of words in the sentence(assuming that the words are seperated by a
 c)The number of vowels.
 */
 //a)The length of the sentence (the number of characters).
-let sen = 'I am going to school.';
-let len = sen.length;
-let total = 0;
+VAR 
+sen = 'I am going to school.';
+len = sen.length;
+total = 0;
+i = 0;
 FOR i FROM 0 TO len - 1 STEP 1  DO
     total += i;
 END_FOR

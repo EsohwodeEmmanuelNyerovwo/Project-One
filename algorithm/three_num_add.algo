@@ -1,0 +1,180 @@
+ALGORITHM algorithm_name
+VAR
+    num1,num2,num3 : INTEGER;
+    sum : INTEGER := 0;
+BEGIN
+    Read(num1);
+    Read(num2);
+    Read(num3);
+    sum := num1 + num2 + num3;
+    write(sum);
+END
+
+ALGORITHM types
+VAR
+    i : INTEGER := 26;
+    f : FLOAT := 4.56;
+    c : CHAR := 'c';
+    s : STRING := 'str';
+    b : BOOLEAN := TRUE;
+BEGIN
+    // This is a single line comment
+    /* This is a multi line comment */
+    f := i; // correct
+    i := f // wrong
+    // We cannot mix types
+    f := c; // wrong
+    s := c; // correct
+    b := i; // wrong
+END
+
+// Ticket of a bus
+// Ask hw old u are
+// If u are under 16, pay half ticket
+// Else pay full ticket
+
+ticket_price := 20;
+IF (age < 16) THEN
+    ticket_price := 10;
+END_IF
+
+// Another way
+IF (age < 16 ) THEN
+    ticket_price := 10;
+ELSE
+    ticket_price := 20;
+END_IF
+
+// Another way
+IF (age <= 10) THEN
+    ticket_price := 5;//or below
+    ticket_price := ((20/100)*20);
+ELSE_IF (age <= 16) THEN
+    ticket_price := 10;
+ELSE
+    ticket_price := 20;
+END_IF
+
+/* Print the opening hour for a zoo
+according to a season */
+// 1  It is winter 2 It is spring 3 It is winter 4 It is autumn
+
+SWITCH (x) DO
+    case 1 : Write("10h00 to 16h00") BREAK;
+    case 2 : Write("10h00 to 18h00") BREAK;
+    case 3 : Write("10h00 to 20h00") BREAK;
+    case 2 : Write("10h00 to 16h00") BREAK;
+    default : Write("Wrong Number"); // optional use of break
+END_SWITCH
+
+/* For loop
+We want to calculate the sum of the 1st ten numbers
+1+2+3+4+5+6+7+8+9+10
+*/
+count : INTEGER;
+sum : INTEGER := 0;
+
+FOR count FROM 1 TO 10 STEP 2  DO
+    sum := sum + count;
+END_FOR
+
+Write(sum);
+
+FOR count FROM 10 TO 1 STEP -2  DO
+    sum := sum + count;
+END_FOR
+
+Write(sum);
+// Calculate hw many times can we divide a number by 2.
+
+count : INTEGER := 0;
+
+//n is number to test
+
+WHILE (n%2 = 0) DO
+    n:=n/2;
+    count := count + 1;
+END_WHILE
+
+Write(count);
+
+/* We loop until a condition is met and an instruction is executed once
+i need to have an age from the user, age > 0. (age must be greater than zero).*/
+
+age:INTEGER;
+
+REPEAT
+    Read(age);
+UNTIL (age <= 0)
+
+Write(age);
+
+/*What is the value of x after executing this code.
+count := 0; x := 3;
+WHILE (count < 3) DO
+    count := count + 1;
+    y := (1+2*count) % 3;
+    SWITCH (y) DO
+        default : 
+        case 0 : x := x-1; BREAK;
+        case 1 : x := x+5;
+    END_SWITCH
+END_WHILE
+a)0 b)3 c)6 d)9 e)12
+*/
+/*What is output of this code
+i:=0;
+    j:=0;
+    WHILE (i < 10 AND j < 5) DO
+        i := i+1;
+        j := j+1;
+    END_WHILE
+    Write(i)
+    Write(j)
+    ans = 5
+*/
+//Simple sort
+PROCEDURE swap(VAR xp, Var yp: INTEGER)
+VAR
+    tmp: INTEGER;
+BEGIN
+    tmp := xp;
+    xp := xy;
+    yp := tmp;
+END
+// Bubble sort
+PROCEDURE bubble_sort(VAR tab: ARRAY_OF INTEGER)
+VAR
+    i,j,n : INTEGER;
+BEGIN
+    n := tab.length;
+    FOR i FROM 0 TO n-1 STEP 1  DO
+        //Last i elements are already in place
+        FOR j FROM 0 TO n-i-1 STEP 1  DO
+            IF (tab[j] > tab[j+1]) THEN
+                swap(tab[j],tab[j+1])
+
+            END_IF
+        END_FOR
+    END_FOR
+END
+//selection sort
+PROCEDURE selection_sort(VAR tab: ARRAY_OF INTEGER)
+VAR
+    i,j,min_idx,n : INTEGER;
+BEGIN
+    n := tab.length;
+
+    //one by one move boundary of sub-array
+    FOR i FROM 0 TO n-2 STEP 1  DO
+        min_idx := i;
+
+        FOR j FROM i TO n-i-2 STEP 1  DO
+            IF (tab[j]<tab[min_idx]) THEN
+                min_idx := j;
+            END_IF
+        END_FOR
+        //swap the found minimum element with the first element
+        swap(arr[min_idx],arr[i])
+    END_FOR
+END
