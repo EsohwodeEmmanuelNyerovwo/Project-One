@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function removeSmallestNumber(num) {
+            //make a copy of the original array without mutation
+            const arr = num.slice(0);
+            //find the smallest value in the array 
+            let smallestValue = num.indexOf(Math.min(...num));
+            //Remove the smallest element in the array
+            arr.splice(smallestValue,1);
+            //Return the array without the smallest element
+            return arr;
+        }
+        console.log(removeSmallestNumber([4,6,8,3,1,90,7]));
+    </script>
+</body>
+</html>
