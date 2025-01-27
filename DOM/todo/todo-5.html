@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+    <form action="">
+        <div><input type="text" name="" id="firstname" placeholder="Firstname"></div>
+        <div><input type="text" name="" id="lastname" placeholder="Lastname"></div>
+        <button type="button" onclick="add()">Send</button>
+    </form>
+    <div class="container"></div>
+    <script>
+        const todoList = [];
+        const add = () => {
+            const fn = document.getElementById('firstname');
+            const ln = document.getElementById('lastname');
+            const fnValue = fn.value;
+            const lnValue = ln.value;
+            todoList.push({Firstname:fnValue,Lastname:lnValue});
+            console.log(todoList);
+            fn.value = '';
+            ln.value = '';
+        }
+    </script>
+</body>
+</html>

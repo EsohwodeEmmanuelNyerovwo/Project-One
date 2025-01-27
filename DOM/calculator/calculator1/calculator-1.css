@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    min-height: 30vh;
+    width: 30%;
+    margin-top: 4rem;
+    grid-template-areas: 'input input input input'
+                            'button1 button1 button1 button1'
+                            'button2 button2 button2 button2'
+                            'button3 button3 button3 button3'
+                            'button4 button4 button4 button4'
+                            'clear clear clear clear';
+}
+div{
+    margin: auto;
+}
+.txt{
+    grid-area: input;
+    margin-bottom: 10px;
+}
+.btn-1{
+    grid-area: button1;
+    width: 350px;
+}
+.btn-2{
+    grid-area: button2;
+    width: 350px;
+}
+.btn-3{
+    grid-area: button3;
+    width: 350px;
+}
+.btn-4{
+    grid-area: button4;
+    width: 350px;
+    margin-bottom: 10px;
+}
+.clear{
+    grid-area: clear;
+    width: 350px;
+}
+.text{
+    width: 350px;
+    padding: 10px;
+    border-radius: 5px;
+}
+.one,.four,.seven,.divide{
+    margin-right: 29px;
+    padding: 10px 25px;
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.two,.three,.five,.six,.eight,.nine,.zero,.dot{
+    margin-right: 29px;
+    padding: 10px 25px;
+}
+.zero,.dot{
+    margin-left: 2px;
+}
+.plus,.minus,.times,.equal{
+    padding: 10px 25px;
+}
+.clear-btn{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: red;
+}

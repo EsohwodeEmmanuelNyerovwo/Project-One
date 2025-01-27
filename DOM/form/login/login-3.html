@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form{
+            background-color: hsl(0, 4%, 86%);
+            height: 400px;
+            width: 400px;
+            padding-top: 100px;
+            padding-left: 80px;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        button{
+            margin-left: 30px;
+        }
+        input{
+            padding: 10px;
+        }
+        button{
+            padding: 10px 30px;
+        }
+        input,button{
+            border: none;
+        }
+        a{
+            color: hsl(232, 82%, 56%);
+            font-size: 1.2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerForm">
+        <form action="" name="loginForm" onsubmit="return validateForm(event)">
+            <div>
+                <label for="firstname">Firstname:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+            </div>
+            <div>
+                <label for="lastname">Lastname:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+            </div>
+            <button type="submit">Login</button> <a href="createAcc.html">Create Account</a>
+    </form>
+    </div>
+    <div class="container"></div>
+    <script>
+        const loginDetails = [];
+        const validateForm = (e) =>{
+            e.preventDefault();
+            const fn = document.loginForm.firstname.value;
+            const ln = document.loginForm.lastname.value;
+            fn.value = '';
+            ln.value = '';
+
+            loginDetails.push({Firstname:fn,Lastname:ln});
+            console.log(loginDetails);
+            render();
+        }
+        const render = () =>{
+            let html = '';
+            let output = document.querySelector('.container');
+            for (let i = 0; i < loginDetails.length; i++) {
+                html += `<p>${loginDetails[i].Firstname} - ${loginDetails[i].Lastname}</p>`;
+            }
+            output.innerHTML = html;
+        }
+    </script>
+</body>
+</html>

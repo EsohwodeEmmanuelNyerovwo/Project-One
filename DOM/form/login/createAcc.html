@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Account</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        form{
+            background-color: hsl(0, 4%, 86%);
+            height: 400px;
+            width: 400px;
+            padding-top: 100px;
+            padding-left: 80px;
+        }
+        div{
+            margin-bottom: 20px;
+        }
+        button{
+            margin-left: 30px;
+        }
+        input{
+            padding: 10px;
+        }
+        button{
+            padding: 10px 30px;
+        }
+        input,button{
+            border: none;
+        }
+        .error{
+            color: hsl(0, 50%, 50%);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="containerForm">
+        <form action="" name="loginForm" onsubmit="return validateForm(event)">
+            <div>
+                <label for="firstname">Firstname:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Firstname">
+                <p id="firstnameError" class="error">Fill in Firstname</p>
+            </div>
+            <div>
+                <label for="lastname">Lastname:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Lastname">
+                <p id="lastnameError" class="error">Fill in Lastname</p>
+            </div>
+            <button type="submit">Login</button>
+    </form>
+    </div>
+    <script>
+        const loginDetails = [];
+        const validateForm = (e) =>{
+            e.preventDefault();
+            let error = false;
+            const fnError = document.querySelector('#firstnameError');
+            const lnError = document.querySelector('#lastnameError');
+            const fn = document.loginForm.firstname.value;
+            if(!fn){
+                // alert('Enter Firstname');
+                fnError.style.display = 'block';
+                error = true;
+                return;
+            }
+            const ln = document.loginForm.lastname.value;
+            if(!ln){
+                // alert('Enter lastname')
+                lnError.style.display = 'block';
+                error = true;
+            }
+            fn.value = '';
+            ln.value = '';
+
+            loginDetails.push({Firstname:fn,Lastname:ln});
+            console.log(loginDetails);
+            if(!error) window.location.href = 'http://127.0.0.1:5500/DOM/form/login/login-3.html';
+        }
+    </script>
+</body>
+</html>

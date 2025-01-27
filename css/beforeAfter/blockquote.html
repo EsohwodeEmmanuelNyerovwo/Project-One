@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockquote</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+            font-size: 1.3em;
+        }
+        p{
+            width: 30%;
+            line-height: 1.45em;
+        }
+        p::before{
+            display: inline-block;
+            content: open-quote;
+            background-color: hsl(0, 0%, 50%);
+            width: 10px;
+            padding: 20px;
+            border-radius: 100%;
+            color: hsl(0, 0%, 100%);
+            font-size: 1.2em;
+        }
+        p::after{
+            content: close-quote;
+            display: inline-block;
+            background-color: hsl(0, 0%, 50%);
+            width: 10px;
+            padding: 20px;
+            border-radius: 100%;
+            color: hsl(0, 0%, 100%);
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Blockquote Using before and after</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Exercitationem amet possimus, voluptas nemo repellendus expedita, ducimus,
+            provident quaerat consectetur eveniet fuga placeat necessitatibus cupiditate?
+            Placeat sed eaque veritatis eveniet ipsum sapiente aperiam facere repudiandae est,
+            et ab consequatur itaque velit commodi dignissimos tempore tempora.
+            Sequi dignissimos ex incidunt minus id nostrum molestias, consequuntur natus!
+            Eaque, suscipit eum eveniet quia dolor animi ad numquam libero recusandae illo
+            ratione exercitationem et sed doloribus quae facere voluptas perspiciatis
+            odit officia quos eos. Provident aperiam commodi dignissimos optio veritatis
+            pariatur architecto. Sed, repudiandae, enim,
+            illum cumque cupiditate sequi placeat eveniet itaque eius numquam aut?
+        </p>
+    </div>
+</body>
+</html>

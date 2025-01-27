@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing DOM</title>
+</head>
+<body>
+    <div class="title">
+        <p class="text">Welcome to GreatStack 1</p>
+        <p class="text second">Welcome to GreatStack 2</p>
+        <p class="text">Welcome to GreatStack 3</p>
+        <p class="text">Welcome to GreatStack 4</p>
+        <ul id="menu"></ul>
+    </div>
+    <script>
+        //Manipulating HTML Element
+        let txtArr = ["First List","Second List In The Array","Third List","Fourth List"];
+        //appendChild
+        let newArr = [];
+        let ul = document.querySelector('#menu');
+        for (let i = 0; i < 4; i++) {
+            let li = document.createElement('li');
+            // li.firstElementChild = 'First List 1';
+            newArr.push(li);
+            newArr[i].innerHTML = txtArr[i];
+            // newArr[i] = 'list';
+            // newArr[0].firstElementChild = 'First List';
+            console.log(li);
+            ul.appendChild(li);
+        }
+        console.log(newArr);
+        console.log(newArr[1].innerHTML = txtArr[1]);
+        // for (let i = 0; i < newArr.length; i++) {
+        //     console.log(newArr[i]);
+        // }
+        //createElement
+        // let div = document.createElement('div');
+        // div.innerHTML = "<p>paragraph 2</p>";
+        // //Adding id to the div
+        // div.id = 'title';
+        // //Adding a class to the div
+        // div.className = 'container';
+        //Adding it to the body
+        // document.body.appendChild(div);
+        // console.log(div);
+        // let nextSibling = document.querySelector('.second');
+        //previous sibling
+        // console.log(nextSibling.previousElementSibling);
+        // //Next Sibling
+        // console.log(nextSibling.nextElementSibling);
+        
+        //Getting the child element using the parent element
+        // let parent = document.querySelector(".title");
+        // //First Child
+        // console.log(parent.firstElementChild);
+        // //Last Child
+        // console.log(parent.lastElementChild);
+        // //Getting all the children
+        // console.log(parent.childNodes);
+        
+        // let txt = document.querySelector('.text');
+        // //Getting the parentNode and parentElement
+        // console.log(txt.parentNode);
+    </script>
+</body>
+</html>

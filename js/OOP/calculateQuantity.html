@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantity Calculator</title>
+    <style>
+        #para{
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: rgb(red, green, blue);
+        }
+    </style>
+</head>
+<body>
+    <p id="para"></p>
+    <button onclick="add()">Add</button>
+    <script>
+        const arr = [];
+        const rand = () =>{
+        for (let i = 0; i < 3; i++) {
+            arr.push(Math.floor(Math.random()*255));
+            }
+            return arr;
+        }
+console.log(rand());
+const randIndex = rand();
+console.log(randIndex[0]);
+document.getElementById('para').style.backgroundColor = `rgb(${randIndex[0]},${randIndex[1]},${randIndex[2]}`;
+        // let qty = 0;
+        // let p = document.getElementById('para');
+        // const add = () =>{
+        //     qty += 1;
+        //     console.log(qty);
+        //     p.innerHTML = qty;
+        // }
+    </script>
+</body>
+</html>

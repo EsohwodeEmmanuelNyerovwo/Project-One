@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <script>
+        const arr = [1,2,3,4];
+        localStorage.setItem('myArray',arr);
+        console.log(localStorage.getItem('myArray'));
+        localStorage.removeItem('myArray');
+        // document.cookie = 'name=Emmy';
+        // console.log(document.cookie);
+        // localStorage.setItem('name','Bob');
+        // console.log(localStorage.getItem('name'));
+        // localStorage.removeItem('name');
+
+        // sessionStorage.setItem('name','John');
+        // console.log(sessionStorage.getItem('name'));
+        // sessionStorage.removeItem('name');
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Toggle Switch</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            background-color: #212221;
+            width: 75px;
+            height: 40px;
+            background: linear-gradient(to right, #1560bd,#e90);
+            border-radius: 50px;
+            position: relative;
+        }
+        input{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            position: absolute;
+            -webkit-appearance: none;
+        }
+        input::before{
+            background-color: hsl(0, 50%, 100%);
+            border-radius: 50px;
+            content: "";
+            height: 70%;
+            position: absolute;
+            top: 50%;
+            width: 85%;
+            transform: translate(7px, -50px);
+        }
+        input::after{
+            background: linear-gradient(to right, orange, #8e2de2);
+            border-radius: 50px;
+            content: "";
+            height: 25px;
+            opacity: 0.6;
+            position: absolute;
+            top: 50%;
+            transform: translate(7px, -50px);
+            transition: all .4s;
+            width: 25px;
+        }
+        input:checked::after{
+            opacity: 1;
+            transform: translate(170%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <!--
+    The -webkit-appearance CSS property is used to control the default styling of HTML elements,
+    overriding the browser’s default styles (such as buttons, input fields, or scrollbars). It is specific to WebKit-based browsers like Chrome and Safari,
+    allowing elements to adopt or ignore native OS styling. 
+     -->
+    <form action="" class="container">
+        <label for="" class="switch">
+            <input type="checkbox" name="" id="">
+        </label>
+    </form>
+</body>
+</html>

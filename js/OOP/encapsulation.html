@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encapsulation</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            constructor(name, color, isWild, sound) {
+                this.name = name;
+                this.color = color;
+                this.isWild = isWild;
+                this.sound = sound;
+            }
+            makeSound(){
+                console.log(`${this.name} ${this.sound}`);
+            }
+        }
+        const ani = new Animal('dog','brown','true','bark');
+        console.log(ani.makeSound());
+    </script>
+</body>
+</html>

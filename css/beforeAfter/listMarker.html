@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling LIst Marker</title>
+    <style>
+        li{
+            margin-left: 30px;
+        }
+        li::marker{
+            color: hsl(0,100%,50%);
+            font-size: 90%;
+            font-weight: bold;
+            content: "["counter(list-item)"]";
+            background-color: hsl(0, 0%, 50%);
+        }
+        .smile::marker{
+            content: "😇";
+            color: hsl(0, 100%, 50%);
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <li>Pass</li>
+        <li>Good</li>
+        <li>Better</li>
+        <li class="smile">Warning</li>
+    </ol>
+</body>
+</html>

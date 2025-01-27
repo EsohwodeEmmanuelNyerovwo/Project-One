@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inheritance</title>
+</head>
+<body>
+    <script>
+        const filterArr = (arr) =>{
+            let newArr = [];
+            for (let i = 0; i < arr.length; i++) {
+                if(arr[i] === Number(arr[i])) {
+                    newArr.push(arr[i]);
+                }
+            }
+            return newArr;
+        }
+        console.log(filterArr([1,2,3,'st',54,'gr','69']));
+        // const addArr = (arr) =>{
+        //     let sum = 0;
+        //     for (let i = 0; i < arr.length; i++) {
+        //       sum += arr[i];
+        //     }
+        //     return sum;
+        // }
+        // console.log(addArr([2,3,4]));
+        // class Vehicle{
+        //     constructor(name){
+        //         this.name = name;
+        //     }
+        //     move(){
+        //         console.log(`${this.name} moves faster.`);
+        //     }
+        // }
+        // class Car extends Vehicle{
+        //     constructor(name){
+        //         super(name)
+        //     }
+        //     honk(){
+        //         console.log(`${this.name} is mordern`);
+                
+        //     }
+        // }
+        // let toyota = new Car('toyota');
+        // toyota.honk();
+        // class Animal{
+        //     constructor(name){
+        //         this.name = name;
+        //     }
+        //     speak(){
+        //         console.log(`${this.name} makes a sound`);
+        //     }
+        // }
+        // class Dog extends Animal{
+        //     bark(){
+        //         console.log(`${this.name} barks loudly`);
+        //     }
+        // }
+        // let boosky = new Dog('boosky');
+        // boosky.speak();
+        // boosky.bark();
+        // class Animal {
+        //     constructor(name, color, isWild, sound) {
+        //         this.name = name;
+        //         this.color = color;
+        //         this.isWild = isWild;
+        //         this.sound = sound;
+        //     }
+        //     makeSound(){
+        //         console.log(`${this.name} ${this.sound}`);
+        //     }
+        // }
+        // const ani = new Animal('dog','brown','true','bark');
+        // console.log(ani.makeSound());
+        // class AnimalClassification extends Animal {
+        //     constructor(name, order) {
+        //         super(name)
+        //         this.order = order;
+        //     }
+        //     classifyByOrder(animalName){
+        //     const animalClass = animals.find((animal) => animal.name === animalName);
+
+        //     if(animalClass){
+        //         console.log(`${animalClass.name} is a ${animalClass.order}`);
+        //     }else{
+        //         console.log(`${animalName} class not found`);
+        //     }
+        //     return this;
+        // }
+        // }
+    </script>
+</body>
+</html>

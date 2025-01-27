@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Effect</title>
+    <style>
+        /* body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        } */
+        h1{
+            position: relative;
+            color: hsl(0, 100%, 100%);
+            max-width: max-content;
+        }
+        h1::after{
+            content: '';
+            background: linear-gradient(to right, hsla(0,100%,50%,0.5),hsl(240,100%,50%));
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+        }
+        hr{
+            width: 50%;
+            height: 50px;
+            background: linear-gradient(to right, hsl(0,100%,50%),hsl(240,100%,50%));
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Before And After Effect</h1>
+    <hr>
+</body>
+</html>

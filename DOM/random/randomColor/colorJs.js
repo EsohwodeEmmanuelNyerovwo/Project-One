@@ -13,7 +13,7 @@ function generateJustOneColor() {
     return hexColorRep;
 }
 console.log(generateJustOneColor());
-btn.addEventListener('click',(event)=>{
+btn.addEventListener('click',()=>{
     box.style.backgroundColor = generateJustOneColor();
 })
 // function getRandomColor() {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <div>
+        <input type="radio" name="language" value="JS" id="js">
+        <input type="radio" name="language" value="HTML" id="">
+        <input type="radio" name="language" value="CSS" id="">
+        <h1 class="h">Header One</h1>
+        <div id="container">
+            <h1 class="h">Header Two</h1>
+            <h1 class="h">Header Three</h1>
+        </div>
+    </div>
+    <script>
+        // 18:30
+        let score = 10;
+        let rad = document.getElementById('js');
+        console.log(rad);
+        if (rad.value === 'JS') {
+            score += 10;
+            console.log(rad.value);
+            console.log(score);
+        }
+        //querySelectorAll returns a NodeList
+        let qA = document.querySelectorAll('div, h1');
+        // console.log(qA);
+        //querySelector returns the first element it matches with.
+        let q = document.querySelector('.h');
+        // console.log(q);
+        //getElementsByClassName returns HTMLCollection of array like object.
+        let ch = document.getElementsByClassName('h');
+        // console.log(ch);
+        // console.log(ch[0]);
+        // getElementsByTagName returns HTMLCollection
+        let heading = document.getElementsByTagName('h1');
+        // console.log(heading);
+        // console.log(heading[0]);
+
+        //getElementsByName returns a nodeList
+        let input = document.getElementsByName('language');
+        // console.log(input);
+    </script>
+</body>
+</html>

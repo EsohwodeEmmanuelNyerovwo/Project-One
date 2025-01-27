@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curved Text</title>
+</head>
+<body>
+    <svg width="200" height="100">
+        <defs>
+            <path id="curve" d="M 10,50 Q 100,-30 190,50" fill="transparent"/>
+        </defs>
+        <text text="black" font-size="20">
+            <textPath href="#curve">
+                Curved text like a smile!
+            </textPath>
+        </text>
+    </svg>
+</body>
+</html>

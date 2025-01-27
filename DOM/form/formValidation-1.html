@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <div id="displayError"></div>
+    <form action="">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name">
+        </div>
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" name="pwd" id="pwd">
+        </div>
+        <button type="button" onclick="add()">Submit</button>
+    </form>
+    <script>
+        const nm = document.getElementById('name');
+        const pass = document.getElementById('pwd');
+        const display = document.getElementById('displayError');
+        const formVal = [];
+        const add = () =>{
+            let nmVal = nm.value;
+            let passVal = pass.value;
+            if (nmVal === '') {
+                display.innerText = 'Name cannot be empty';
+                return;
+            }
+            if(passVal.length <= 6){
+                display.innerText = 'too short';
+            }
+            if (nmVal != '' && passVal.length >= 6) {
+                formVal.push({Name:nmVal,Password:passVal})
+            }
+            console.log(formVal);
+            nm.value = '';
+            pass.value ='';
+        }
+    </script>
+</body>
+</html>

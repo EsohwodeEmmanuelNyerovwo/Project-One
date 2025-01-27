@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Sort</title>
+</head>
+<body>
+    <script>
+        const sortArr = ['Jack',8,2,2,6,'King',5,3,'Queen','King','Queen',"Ace"];
+        // // sortArr.sort((a,b)=>  a - b);
+        const sortArrayElement = (arr) =>{
+        //     // let nums = [];
+        //     // let str = [];
+        //     // for (const element of arr) {
+        //     //     if(typeof(element) === 'string') str.push(element);
+        //     //     else{ nums.push(element);}
+        //     // }
+            
+        //     // str.sort();
+        //     // nums.sort((a,b)=>a-b);
+        //     // console.log(str);
+        //     // console.log(nums);
+        //     // return [...nums,...str];
+            // https://www.freecodecamp.org/news/how-to-sort-array-of-objects-by-property-name-in-javascript/
+            const order= {
+                Ace:1,
+                2:2,
+                3:3,
+                4:4,
+                5:5,
+                6:6,
+                7:7,
+                8:8,
+                9:9,
+                10:10,
+                Jack:11,
+                Queen:12,
+                King:13,
+            }
+        //     if (typeof Object.keys === "string") {
+            return arr.sort((a,b)=> order[a] - order[b]);
+                
+            }
+        // }
+        console.log(sortArrayElement(sortArr));
+
+    </script>
+</body>
+</html>

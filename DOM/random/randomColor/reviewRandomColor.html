@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div id="divShow" style="width: 100px; height: 100px;"></div>
+    <button id="btnShow" onclick="display()">Display</button>
+    <script>
+        const colors = [0,1,2,3,4,5,6,7,8,9,'A','B','C','D','E','F'];
+        function selectIndexColors(arr) {
+            let hashSymbol = '#';
+            // let rand;
+            for (let i = 0; i < 6; i++) {
+                hashSymbol += arr[Math.floor(Math.random()*arr.length)];
+                // hashSymbol += rand;
+            }
+            return hashSymbol;
+        }
+        console.log(selectIndexColors(colors));
+        const c = selectIndexColors(colors);
+        console.log(c);
+        function display() {
+            document.getElementById('divShow').style.border = `1px solid ${selectIndexColors(colors)}`;
+            // document.getElementById('divShow').style.backgroundColor = selectIndexColors(colors);
+        }
+    </script>
+</body>
+</html>

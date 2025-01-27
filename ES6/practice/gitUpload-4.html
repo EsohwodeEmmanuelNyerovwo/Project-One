@@ -3,29 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Convert number to reversed array of digits</title>
+    <title>Convert number to words</title>
 </head>
 <body>
     <script>
-        /*
-        Convert number to reversed array of digits
-        Given a random non-negative number, you have to return the digits of this
-        number within an array in reverse order.
-
-        Example(Input => Output):
-        35231 => [1,3,2,5,3]
-        0 => [0]
-        */
-        function digitize(n) {
-            //code here
-            let str = String(n);
-            let newArr = []
-            for(let i = 0; i < str.length; i++){
-                newArr.unshift(Number(str[i]))
+        function numberToWords(n) {
+            switch(n){
+                case 0:
+                   n =  "zero";
+                   break;
+                case 1:
+                   n =  "one";
+                   break;
+                   case 2:
+                   n =  "two";
+                   break;
+                case 3:
+                   n =  "three";
+                   break;
+                case 4:
+                   n =  "four";
+                   break;
+                case 5:
+                   n =  "five";
+                   break;
+                case 6:
+                   n =  "six";
+                   break;
+                case 7:
+                   n =  "seven";
+                   break;
+                case 8:
+                   n =  "eight";
+                   break;
+                case 9:
+                   n =  "nine";
+                   break;
             }
-            return newArr;
+            return n;
         }
-        console.log(digitize(35231));
+        console.log(numberToWords(8));
+        function arrOfNumWords(num) {
+            let arr = [];
+            for(let i = 0; i < num.length; i++){
+                arr.push(numberToWords(num[i]));
+            }
+            return arr;
+        }
+        console.log(arrOfNumWords([8,0,0]));
+      //   function arrOfNumWords(num) {
+      //       let arr = [];
+      //       for(let i = 0; i < num; i++){
+      //           arr.push(numberToWords(i));
+      //       }
+      //       return arr;
+      //   }
+      //   console.log(arrOfNumWords(8));
     </script>
 </body>
 </html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traversing The DOM</title>
+    <style>
+        input{
+            background-color: red;
+            font-size: 12px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" name="myName" id="ipt" placeholder="username">
+    <!-- <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Blog</li>
+        <li>Project</li>
+    </ul> -->
+    <!-- video stopped @ 59:41 -->
+     <!-- Event Handler is also known as Event Listener -->
+      <div id="container">
+        <button type="button" id="btn">Click Here</button>
+      </div>
+    <script>
+        function display() {
+            for (let i = 0; i < 4; i++) {
+                console.log(i + 'Clicking Button');
+            }
+        }
+        function displayEvent(event) {
+            console.log(event.type);
+        }
+        let bt = document.getElementById('btn');
+        bt.addEventListener('click', displayEvent);
+        let inpt = document.getElementById('ipt');
+        inpt.classList.add('txt');
+        inpt.classList.add('txt1','txt2');
+        inpt.classList.remove("txt",'txt2');
+        inpt.classList.replace("txt1",'txt5');
+        inpt.classList.toggle("txt2");
+        console.log(inpt.classList.contains("txt5"));
+        console.log(inpt.className);
+        console.log(inpt.classList);
+        
+        // console.log(window.getComputedStyle(input).fontSize);
+        // console.log(window.getComputedStyle(input).background);
+        // console.log(window.getComputedStyle(input).width);
+        
+        // input.style.backgroundColor = 'blue';
+        inpt.style.padding = '12px';
+        // input.style.color = 'red';
+        inpt.style.fontSize = '3rem';
+        // input.style.cssText += "width:300px;background-color:red;color:white";
+        console.log(inpt.getAttribute("placeholder"));
+        inpt.setAttribute('id','user')
+        console.log(inpt);
+        console.log(inpt.hasAttribute('name'));
+        // let menu = document.querySelector('#menu');
+        // let list = document.createElement('li');
+        // list.innerHTML = 'Contact';
+        // menu.appendChild(list);
+    </script>
+</body>
+</html>

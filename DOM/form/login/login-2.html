@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .error{
+            color: hsl(0, 50%, 50%);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Stop Using Pixels For Media Queries - https://youtu.be/Op3hhQhNKIc -->
+    <form name="loginForm" onsubmit="validateForm(event)">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" placeholder="name">
+            <p id="errorName" class="error">Enter your name</p>
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="pass">
+            <p id="passwordError" class="error">Enter Password</p>
+        </div>
+        <button type="submit">Login</button>
+        <button type="reset">Cancel</button>
+    </form>
+    <script>
+        const validateForm = (e) => {
+            e.preventDefault();
+            let error = false;
+            const name = document.loginForm.name.value;
+            const errorName = document.getElementById('errorName');
+            const pass = document.loginForm.pass.value;
+            const passwordError = document.getElementById('passwordError');
+
+            if(!name){
+                errorName.style.display = 'block';
+                error = true;
+                return;
+            }
+            if(!pass || pass.length < 6){
+                passwordError.style.display ='block';
+                error = true;
+            }
+
+            if (!error) {
+                window.location.href = '/DOM/form/login/login-1.html';
+            }
+        }
+    </script>
+</body>
+</html>

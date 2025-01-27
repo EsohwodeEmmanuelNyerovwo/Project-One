@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 100px;
+    background-color: hsl(0, 100%, 0%);
+    color: hsl(0, 100%, 100%);
+}
+.wrapper{
+    /* border: 1px solid #333; */
+    width: 400px;
+    padding: 15px;
+    padding-top: 0;
+    position: relative;
+}
+.inputBtn{
+    width: 100%;
+    padding: 20px 0;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    border: none;
+}
+::-webkit-input-placeholder{
+    padding-left: 35px;
+}
+.icon1,.icon2,.required1,.required2{
+    position: absolute;
+    color: #ccc;
+}
+.icon1{
+    top: 20px;
+    left: 25px;
+    color: hsl(0, 100%, 0%);
+}
+.icon2{
+    top: 89px;
+    left: 25px;
+    color: hsl(0, 100%, 0%);
+}
+.required1{
+    top: 20px;
+    right: 25px;
+}
+.required2{
+    top: 85px;
+    right: 25px;
+}
+.btn{
+    background-color: rgb(9, 9, 167);
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+.btn1,.btn2{
+    padding: 12px 17px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+.btn1{
+    margin-left: 20px;
+}
+.btn2{
+    margin-left: 82px;
+}
+.signIn{
+    font-family: 'Poppins',sans-serif;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+.paraLogin{
+    font-family: 'Poppins',sans-serif;
+    width: 30ch;
+}
+.paraLogin span{
+    margin-left: 90px;
+}
+.paraImg{
+    position: relative;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+.paraImg img{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.btnLogin{
+    margin-top: 15px;
+}
+.btn-container{
+    margin-top: 20px;
+}

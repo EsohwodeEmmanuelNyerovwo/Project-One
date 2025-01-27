@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+    <form action="">
+        <label for="">First Name</label>
+        <input type="text" name="" class="txtFN" id="">
+        <label for="">Last Name</label>
+        <input type="text" name="" class="txtLN" id="">
+        <button type="button" onclick="add()">Send</button>
+    </form>
+    <div class="container"></div>
+    <script>
+        const todoArr = [];
+        const add = () =>{
+            let txtFirstName = document.querySelector('.txtFN');
+            let txtLastName = document.querySelector('.txtLN');
+
+            const txtFirstNameValue = txtFirstName.value;
+            const txtLastNameValue = txtLastName.value;
+
+            todoArr.push({FirstName:txtFirstNameValue,LastName:txtLastNameValue});
+            console.log(todoArr);
+            txtFirstName.value = '';
+            txtLastName.value = '';
+            render();
+        }
+        //window.location.href='file to go'
+        const render = () =>{
+            let todoList = '';
+            let output = document.querySelector('.container');
+            for (let i = 0; i < todoArr.length; i++) {
+                todoList += `<p>${todoArr[i].FirstName} --- ${todoArr[i].LastName}</p>`;
+            }
+            output.innerHTML = todoList;
+        }
+    </script>
+</body>
+</html>

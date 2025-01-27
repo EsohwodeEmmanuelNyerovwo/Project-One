@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculatorContainer">
+        <div><input type="text" id="txt"></div>
+    </div>
+    <div class="btnContainer">
+        <button type="button" class="btn btnOne">1</button>
+        <button type="button" class="btn btnTwo">2</button>
+        <button type="button" class="btn btnThree">3</button>
+        <button type="button" class="btn btnFour">4</button>
+        <button type="button" class="btn btnFive">5</button>
+        <button type="button" class="btn btnEqual" onclick="display()">=</button>
+        <button type="button" class="btn btnPlus" onclick="calculate('+')">+</button>
+        <button type="button" class="btn btnMinus" onclick="calculate('-')">-</button>
+        <!-- <button type="button" class="btn btnOne" onclick="calculate('1')">1</button>
+        <button type="button" class="btn btnTwo" onclick="calculate('2')">2</button>
+        <button type="button" class="btn btnThree" onclick="calculate('3')">3</button>
+        <button type="button" class="btn btnFour" onclick="calculate('4')">4</button>
+        <button type="button" class="btn btnFive" onclick="calculate('5')">5</button>
+        <button type="button" class="btn btnEqual" onclick="display()">=</button>
+        <button type="button" class="btn btnPlus" onclick="calculate('+')">+</button>
+        <button type="button" class="btn btnMinus" onclick="calculate('-')">-</button> -->
+    </div>
+    <script>
+        const txt = document.getElementById('txt');
+
+        function calculate(input){
+            txt.value += input;
+        }
+        function display() {
+            txt.value += ` = ${eval(txt.value)}`;
+        }
+        const selectAllBtn = document.querySelectorAll('.btn');
+        selectAllBtn.forEach((btnItem) =>{
+            // const btn1 = btnItem.querySelector('.btnOne');
+            const btn1 = btnItem.querySelector('.btn').innerHTML;
+            console.log(btn1);
+            
+            btnItem.addEventListener('click',()=>{
+                txt.value += btn1;
+            })
+        })
+    </script>
+</body>
+</html>

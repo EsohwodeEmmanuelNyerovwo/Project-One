@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop Up</title>
+    <style>
+        #p{
+            display: none;
+        }
+        #h2Pop:hover #p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h2 id="h2Pop" onclick="hideMe()">Header 2</h2>
+    <span id="p">popup</span>
+    <script>
+        function hideMe() {
+            document.getElementById('p').style.display = "block";
+        }
+    </script>
+</body>
+</html>

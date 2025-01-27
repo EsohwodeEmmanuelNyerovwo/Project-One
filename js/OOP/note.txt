@@ -1,0 +1,76 @@
+Intro to Object Oriented Programming - Crash Course - https://youtu.be/SiBw7os-_zI
+Object Oriented JavaScript Tutorial #2 - Object Literals - https://youtu.be/7d9H34ZVRPg?list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7
+Object Oriented JavaScript Tutorial #3 - Updating Properties - https://youtu.be/ni9e-lOEw3Q?list=PL4cUxeGkcC9i5yvDkJgt60vNVWffpblB7
+Node JS Complete Course For Beginners 2025 | 
+Node JS Backend Tutorials Step by Step With Example - https://youtu.be/yGl3f0xTl_0
+Learn Closures In 7 Minutes - https://youtu.be/3a0I8ICR1Vg
+https://github.com/o-david/redBerryGuardians/
+JavaScript Shopping Cart Tutorial for Beginners - https://www.youtube.com/watch?v=YeFzkC2awTM&list=PLZlA0Gpn_vH9k5ju1yq9qCDqvtuTVgTr6
+JavaScript Registration Form Validation Tutorial In Hindi - हिंदी में - https://youtu.be/WLUCzSaH5kI
+Map - https://www.youtube.com/shorts/4PZeIwXx1hc?feature=share
+Storing Objects with Local Storage in JavaScript - https://youtu.be/AUOzvFzdIk4
+Learn DOM Manipulation In 18 Minutes - https://youtu.be/y17RuWkWdn8
+Build a Real Time Chat App With Node.js And Socket.io - https://youtu.be/rxzOqP9YwmM
+Build a Weather App With JavaScript - https://youtu.be/OE7kml0pigw
+10 Form Validation Tips Every Web Developer SHOULD KNOW! - https://youtu.be/EQrUGEvnCzY
+THE MOST ADVANCE REACT.JS COURSE: THE BIGGEST REACT.JS COURSE
+ ON THE INTERNET ( PART 4 ) - https://youtu.be/znZQFzoV3CM
+ rest API using node js - https://www.youtube.com/watch?v=fgTGADljAeg
+ https://sabiteach.com/learn-how-to-calculate-cgpa-in-nigerian-universities
+ https://css-tricks.com/almanac/pseudo-selectors/p/placeholder/ ->The ::placeholder pseudo element 
+ (or a pseudo class, in some cases, depending on the browser implementation) 
+ allows you to style the placeholder text of a form element.
+ As in, the text set with the placeholder attribute:
+ Create Crazy 3D Image Slider Effects Using CSS Only - https://youtu.be/yqaLSlPOUxM
+ How To Deploy A React Vite App To Github Pages (Simple) - https://youtu.be/hn1IkJk24ow
+ Learn to Build your First AI Robot in 1 Hour | Python Programming -https://youtu.be/x0oUZ4HS7lg
+ SQL Full Course 2025 | Complete SQL Course For Beginners |
+ Learn SQL in 11 Hours | Intellipaat - https://youtu.be/R2fQ5-PMju0
+ 50+ HOURS REACT.JS 19 MONSTER CLASS - https://youtu.be/M9O5AjEFzKw
+ Inverted Border Magic: Stunning CSS Masking Effects! - https://youtu.be/dbaOq7F5msU
+CSS Hack: Create Inverted Border Radius Cards That WOW! 🎨 HTML CSS - https://youtu.be/2pZR-vfbcbo
+How To Create Inverted border-radius 
+Card With CSS ‪@KevinPowell‬ | CSS Curve Outside - https://youtu.be/JXaTx4s0kEk
+Draw Line Around Button on Hover | Html CSS Animation Effect - https://youtu.be/uN0wwNtQ8Z8
+CSS Inverted border-radius Cards | Curve Outside - https://youtu.be/tuKeRe9X0zI
+How to make Inverted Border Radius Card in HTML and CSS - https://youtu.be/vbWa9iUwHRU
+JavaScript Tutorial for Beginners [JS Crash Course 2024] - https://youtu.be/FtaQSdrl7YA
+https://www.digitalocean.com/community/tutorials/how-to-use-object-methods-in-javascript
+https://mrdavidstudents.com.ng/
+TTS & Translate App | Serverless Functions,Google Translate & Web Speech API - https://youtu.be/V0P3Opf-zUs
+OTP Webpage Design Using HTML, CSS & JS | OTP Input Field CSS Design | OTP Webpage UI Design - https://youtu.be/rep-WKLTHC4
+JavaScript Full Course for free 🌐 (2024) - https://youtu.be/lfmg-EJ8gm4
+JavaScript Tutorial Full Course - Beginner to Pro (2024) - https://youtu.be/EerdGm-ehJQ
+Stanford CS229 - Machine Learning University Course - Andrew Ng (Part 1) - https://youtu.be/sSGygYqnp10
+Magic Navigation Menu HTML CSS Only - Animated Half Circular Indicator - https://youtu.be/sgV111KxbwI
+how to create a shopping cart using HTML and CSS | How to make Shopping Cart using HTML and CSS - https://youtu.be/ROKfwHO8zr4
+Animated Login and Registration Form using HTML,CSS & JavaScript - https://youtu.be/RCBAOKBzYrI?list=PLMtGumK2bZSe3SR4Nlo9IXlBzq9k67dZS
+Login Form in HTML & CSS - https://youtu.be/hlwlM4a5rxg
+Responsive Login Form Using Html and CSS - https://youtu.be/lhaz18jZT_A?list=PLsUAffAGT1nlVytnmox7QHwMuRruGXpD-
+Responsive Full Website Using HTML And CSS And JavaScript Without Any Image | Master CSS Design - https://youtu.be/mAk5SZq4X2c
+Learn JavaScript With These 5 Projects - https://youtu.be/kZMwrXyxQYE
+10 Web Development Project Ideas for 2025 (Beginners to Advanced) | Web Dev Projects for Resume - https://youtu.be/0kLJZ6lDmSc
+Transparent Login Form With Glass Effect Using HTML CSS 2021 | HTML CSS Tutorials | Tutorials Dev - https://youtu.be/AHC43DVfjfo
+How To Build A Modern Login Screen With Error/Success States - https://youtu.be/reumU4CvruA
+Redirecting to another html page after successful login attempt - https://youtu.be/0eJ_HP-P1zg
+how to create a shopping cart using HTML and CSS | How to make Shopping Cart using HTML and CSS - https://youtu.be/ROKfwHO8zr4
+CSS Breakpoint: January 2025 - https://youtu.be/QAVDDiBT5hA
+Learn CSS Animations in 9 Minutes - https://youtu.be/z2LQYsZhsFw
+Learn CSS Transform In 15 Minutes - https://youtu.be/rzD-cPhq02E
+Animated Login & Registration Form using HTML,CSS & JavaScript - https://youtu.be/T8qYM9rWOyY
+9 PDF: JavaScript - https://youtu.be/xZPK04a5ltc
+How to create Portfolio Website Using HTML and CSS | Full Web Design Process [STEP-BY-STEP GUIDE] - https://youtu.be/a2YK7QF4PIw
+Next.js Full-Stack School Management App Full Tutorial | Role Based School Dashboard Project - https://youtu.be/6sfiAyKy8Jo
+React.JS Full Course - Build 4 Projects in 5 Hours | Zero to Hero - https://youtu.be/82PXenL4MGg
+Store HTML Form Data in Local Storage using JavaScript - https://youtu.be/9n3qAeaBMGU
+CSS-Only Page Transitions That Will BLOW Your Mind! - https://youtu.be/4oSZzAOpbOw
+TypeScript Full Course - From Beginner to Advanced - https://youtu.be/iJkaAJUzeWQ
+CSS Easy 3D Card Animation Hover Effects | CSS Animation Play State | CSS Animation | CSS !important - https://youtu.be/LRiORDWOoXI
+HTML CSS JS projects (Beginner): 30 projects using HTML CSS and JavaScript - https://youtu.be/NfvtQ2p5QG4
+https://www.basedash.com/blog/how-to-add-an-image-in-an-array-in-javascript
+https://www.freecodecamp.org/news/object-oriented-programming-javascript/
+https://www.freecodecamp.org/news/how-to-use-javascript-array-reduce-method/
+https://www.w3schools.com/jsref/met_document_queryselectorall.asp
+https://js-book.softuni.bg/
+https://www.geeksforgeeks.org/how-to-understand-recursion-in-javascript/
+https://www.freecodecamp.org/news/recursion-in-javascript/

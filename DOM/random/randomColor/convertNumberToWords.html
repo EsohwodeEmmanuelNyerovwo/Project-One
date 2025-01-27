@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert Numbers To Words</title>
+</head>
+<body>
+    <script>
+        function convertNumToWords(num) {
+            switch (num) {
+                case 0:
+                    num = 'zero';
+                    break;
+                case 1:
+                    num = 'one';
+                    break;
+                case 2:
+                    num = 'two';
+                    break;
+                case 3:
+                    num = 'three';
+                    break;
+                case 4:
+                    num = 'four';
+                    break;
+                case 5:
+                    num = 'five';
+                    break;
+                case 6:
+                    num = 'six';
+                    break;
+                case 7:
+                    num = 'seven';
+                    break;
+                case 8:
+                    num = 'eight';
+                    break;
+                case 9:
+                    num = 'nine';
+                    break;
+                default:
+                    num = 'Must be numbers only';
+                    break;
+            }
+            return num;
+        }
+
+        function showNumToWords(arr) {
+            let newArr = [];
+            for(let i = 0; i < arr.length; i++){
+                newArr.push(convertNumToWords(arr[i]));
+            }
+            return newArr;
+        }
+        console.log(showNumToWords([1,2,3,4]));
+    </script>
+</body>
+</html>

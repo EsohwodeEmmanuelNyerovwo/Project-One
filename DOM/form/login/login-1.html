@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .error{
+            color: hsl(0,50%,50%);
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form name="loginForm" onsubmit="return validateForm(event)">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Name">
+            <p id="nameError" class="error">Pls enter your name</p>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" placeholder="******">
+            <p id="passwordError" class="error">Enter Password(Must be more than 6 characters long)</p>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+        </div>
+        <button type="submit">Login</button>
+        <button type="reset">Cancel</button>
+    </form>
+    <script>
+        const validateForm = (e) =>{
+            e.preventDefault();
+            let error = false;
+            let name = document.loginForm.name.value;
+            let pass = document.loginForm.password.value;
+            let nameError = document.getElementById('nameError');
+            let passwordError = document.getElementById('passwordError');
+
+            if(!name){
+                nameError.style.display ='block';
+                error = true;
+            }
+            if(!pass || pass.length < 6){
+                passwordError.style.display = 'block';
+                error = true;
+            }
+
+            if(!error) window.location.href = "./form-1.html";
+        }
+    </script>
+</body>
+</html>

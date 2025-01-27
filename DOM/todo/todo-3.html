@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+    <form action="">
+        <input type="text" name="" class="txt" id="">
+        <button type="button" id="btn" onclick="add()">Send</button>
+    </form>
+    <div class="container"></div>
+    <script>
+        let todoArr = [];
+        const add = () => {
+            let todoTxt = document.querySelector('.txt');
+            let todoTxtValue = todoTxt.value;
+            todoArr.push(todoTxtValue);
+            console.log(todoArr);
+            todoTxt.value = '';
+            render();
+        }
+        const render = () =>{
+            let output = document.querySelector('.container');
+            let todoList = '';
+            for (let i = 0; i < todoArr.length; i++) {
+                todoList += `<p>${todoArr[i]}</p>`;
+            }
+            output.innerHTML = todoList;
+        }
+    </script>
+</body>
+</html>

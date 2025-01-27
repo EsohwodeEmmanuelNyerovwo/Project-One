@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Functions</title>
+    <style>
+        body{
+            color: hsl(0, 50%, 100%);
+        }
+        div{
+            color: hsl(0, 50%, 45%);
+        }
+        p{
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div><p>I am a header</p></div>
+    <script>
+        document.addEventListener('click',() => console.log('click'));
+        const randNumber = () => Math.random();
+
+        console.log(randNumber());
+
+        const sum = (a,b) => a + b;
+        // console.log(sum(4,4));
+        //checking for a positive number
+        const isPositive = (num) => num > 0;
+        // console.log(isPositive(31));
+        
+    </script>
+</body>
+</html>

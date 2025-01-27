@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spread Operator</title>
+</head>
+<body>
+    <script>
+        let st1 = {name:'John'};
+        let st2 = {name:'Mary'};
+        let newObject = {...st1,...st2,name:'Daniel'};
+        console.log(newObject);
+        let obj1 = {fs:'Daniel',fs:'John'};
+        // console.log(obj1);
+        // let obj2 = {age:25};
+        // let newObj = {...obj1,...obj2};
+        // console.log(newObj);
+        let arr1 = [1,2,3];
+        let arr2 = [4,5,6];
+        //concat is ES5
+        // arr1 = arr1.concat(arr2);
+        // console.log(arr1);
+        console.log("----------------------");
+        //... is an ES6 which is the spread operator
+        arr1 = [...arr1,...arr2];
+        console.log(arr1);
+    </script>
+</body>
+</html>

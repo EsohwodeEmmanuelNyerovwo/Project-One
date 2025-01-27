@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Check Point</title>
+</head>
+<body>
+    <script>
+        /*
+        Remove the minimum
+        important fair, so she asks you to write a program that tells her the ratings of the exhibits after removing the lowest one. Fair enough.
+
+Task
+Given an array of integers, remove the smallest value. Do not mutate the original array/list. If there are multiple elements with the same value, remove the one with the lowest index. If you get an empty array/list, return an empty array/list.
+
+Don't change the order of the elements that are left.
+
+Examples
+* Input: [1,2,3,4,5], output = [2,3,4,5]
+* Input: [5,3,2,1,4], output = [5,3,2,4]
+* Input: [2,2,1,2,1], output = [2,2,2,1]
+        */
+        function removeSmallest(numbers) {
+            //make a copy of the original array without mutation
+            const copy = numbers.slice(0);
+            //find the smallest value in the array 
+            let smallestValue = numbers.indexOf(Math.min(...numbers));
+            //Remove the smallest element in the array
+            copy.splice(smallestValue,1);
+            //Return the array without the smallest element
+            return copy;
+        }
+        /*
+        Make a function that does arithmetic!
+        */
+       // A few examples:(Input1, Input2, Input3 --> Output)
+//5, 2, "add"      --> 7
+//5, 2, "subtract" --> 3
+//5, 2, "multiply" --> 10
+//5, 2, "divide"   --> 2.5
+//Try to do it without using if statements!
+function arithmetic(a, b, operator){
+  //your code here!
+  switch(operator){
+      case 'add':
+        return a + b;
+        break;
+      case 'subtract':
+        return a - b;
+        break;
+      case 'multiply':
+        return a * b;
+        break;
+      case 'divide':
+        return a / b;
+        break;
+  }
+}
+        /*
+        Counting sheep...
+        Consider an array/list of sheep where some sheep may be missing from their place. We need a function that counts the number of sheep present in the array (true means present).
+
+For example,
+
+[true,  true,  true,  false,
+  true,  true,  true,  true ,
+  true,  false, true,  false,
+  true,  false, false, true ,
+  true,  true,  true,  true ,
+  false, false, true,  true]
+The correct answer would be 17.
+
+Hint: Don't forget to check for bad values like null/undefined
+        */
+        function countSheeps(sheep) {
+        // TODO
+        let count = 0;
+        for(let i = 0; i < sheep.length; i++){
+            if(sheep[i] == true) count++;
+        }
+        return count;
+        }
+        /*
+        Convert number to reversed array of digits
+Given a random non-negative number, you have to return the digits of this
+number within an array in reverse order.
+
+Example(Input => Output):
+35231 => [1,3,2,5,3]
+0 => [0]
+        */
+        function digitize(n) {
+            //code here
+            let str = String(n);
+            let newArr = []
+            for(let i = 0; i < str.length; i++){
+                newArr.unshift(Number(str[i]))
+            }
+            return newArr;
+        }
+        /*
+        Sentence Smash
+        together into a sentence and returns the sentence. You can ignore any need to sanitize words or add punctuation, but you should add spaces between each word. Be careful, there shouldn't be a space at the beginning or the end of the sentence!
+
+Example
+['hello', 'world', 'this', 'is', 'great']  =>  'hello world this is great'
+words = ['hello', 'world', 'this', 'is', 'great']
+smash(words) # returns "hello world this is great"
+        */
+        function smash (words) {
+            return words.join(' ');
+        };
+        /*
+        Plural
+        We need a simple function that determines if a plural is needed or not. It should take a number, and return true if a plural should be used with that number or false if not. This would be useful when printing out a string such as 5 minutes, 14 apples, or 1 sun.
+
+You only need to worry about english grammar rules for this kata, where anything that isn't singular (one of something), it is plural (not one of something).
+
+All values will be positive integers or floats, or zero.
+        */
+        function plural(n) {
+            // ...
+            if(n === 1) return false;
+            return true;
+        }
+        /*
+        Function 1 - hello world
+        Make a simple function called greet that returns the most-famous "hello world!".
+
+Style Points
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative "hello world" you can think of?
+What is a "hello world" solution you would want to show your friends?
+        */
+       // Write a function "greet" that returns "hello world!"
+        function greet(){
+            return 'hello world!';
+        }
+        /*
+        Count the Monkeys!
+        You take your son to the forest to see the monkeys. You know that there are a certain number there (n), but your son is too young to just appreciate the full number, he has to start counting them from 1.
+
+As a good parent, you will sit and count with him. Given the number (n), populate an array with all numbers up to and including that number, but excluding zero.
+        */
+       //For example(Input --> Output):
+
+//10 --> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+// 1 --> [1]
+function monkeyCount(n) {
+// your code here
+  let newArr = [];
+  for(let i = 1; i <= n; i++){
+    newArr.push(i);
+  }
+  return newArr;
+}
+        /*
+        Jenny's secret message
+        Jenny has written a function that returns a greeting for a user. However, she's in love with Johnny, and would like to greet him slightly different.
+        She added a special case to her function, but she made a mistake.
+        */
+        function greet(name){
+            if(name !== 'Johnny')
+                return "Hello, " + name + "!";
+            if(name === "Johnny")
+                return "Hello, my love!";
+        }
+        /*
+        Grasshopper - Summation
+        Summation
+Write a program that finds the summation of every number from 1 to num. The number will always be a positive integer greater than 0. Your function only needs to return the result, what is shown between parentheses in the example below is how you reach that result and it's not part of it, see the sample tests.
+
+For example (Input -> Output):
+
+2 -> 3 (1 + 2)
+8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+        */
+        var summation = function (num) {
+            // Code here
+            let sum = 0;
+            for(let i = 1; i <= num; i++){
+                sum += i;
+            }
+            return sum;
+        }
+        /*
+        If you can't sleep, just count sheep!!
+        Task:
+Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...".
+Input will always be valid, i.e. no negative integers.
+        */
+        var countSheep = function (num){
+            //your code here
+            let str = '';
+            for(let i = 1; i <= num; i++){
+                str += `${i} sheep...`;
+            }
+            return str;
+        }
+        /*
+        Double Char
+        Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+Examples (Input -> Output):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+        */
+        function doubleChar(str) {
+            // Your code here
+            return [...str].map(s => s.repeat(2)).join('')
+        }
+
+        /*
+        Multiples of 3 or 5
+        If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+
+Finish the solution so that it returns the sum of all the multiples of 3 or 5 below the number passed in.
+
+Additionally, if the number is negative, return 0.
+
+Note: If the number is a multiple of both 3 and 5, only count it once
+        */
+        function solution(number){
+            let sum = 0;
+            for(let i = 1; i < number; i++){
+                if((i % 3 == 0) || (i % 5 == 0)){
+                sum += i;
+                }
+            }
+            return sum;
+        }
+        function arithmetic(a, b, operator){
+            //your code here!
+            switch(operator){
+                case 'add':
+                    return a + b;
+                    break;
+                case 'subtract':
+                    return a - b;
+                    break;
+                case 'multiply':
+                    return a * b;
+                    break;
+                case 'divide':
+                    return a / b;
+                    break;
+            }
+        }
+        console.log(arithmetic(4,4,'divide'));
+        function minimunNum(arr) {
+            let min = arr[0];
+            let newArr = [];
+            for(let i = 0; i < arr.length; i++){
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+            }
+            return arr;
+        }
+        console.log(minimunNum([5,4,3,7,1,9]));
+        /*
+        Convert boolean values to strings 'Yes' or 'No'.
+        Complete the method that takes a boolean value and
+        return a "Yes" string for true, or a "No" string for false.
+        */
+        function boolToWord( bool ){
+            //...
+            if(bool) return 'Yes';
+            else return 'No';
+        }
+        /*
+        Convert a Number to a String!
+        We need a function that can transform a number (integer) into a string.
+
+What ways of achieving this do you know?
+*/
+//Examples (input --> output):
+//123  --> "123"
+//999  --> "999"
+//-100 --> "-100"
+function numberToString(num) {
+  // Return a string of the number here!
+  return String(num);
+}
+        let s = String(123);
+        console.log(typeof s);
+        /*
+        Remove First and Last Character
+        It's pretty straightforward.
+        Your goal is to create a function that removes
+        the first and last characters of a string.
+        You're given one parameter, the original string.
+        You don't have to worry about strings with less than two characters.
+        */
+        function removeChar(str){
+            //You got this!
+            //   return str.slice(1,-1);
+            // or
+            let strArr = str.split('');
+            let fc = strArr.shift();
+            let lc = strArr.pop();
+            return strArr.join('');
+        };
+        let str = "I am going to school";
+        console.log(str.split(' '));
+        let strArr = str.split(' ');
+        let fc = strArr.shift();
+        console.log(strArr);
+        let lc = strArr.pop();
+        console.log(strArr);
+        console.log(strArr.join(' '));
+        /*
+        Return Negative
+        In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+Examples
+makeNegative(1);    // return -1
+makeNegative(-5);   // return -5
+makeNegative(0);    // return 0
+makeNegative(0.12); // return -0.12
+        */
+        function makeNegative(num) {
+            // Code?
+            let n;
+            if(num < 0){
+                n = -(Math.abs(num));
+            }
+            else{
+                n = -num
+            }
+            return n;
+        }
+        /*
+        Sum of two lowest positive integers
+        Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
+        */
+        function sumTwoSmallestNumbers(numbers) {  
+            //Code here
+            let sum = 0;
+            let num = numbers.sort((a,b)=> a - b);
+            sum = num[0] + num[1];
+            return sum;
+        }
+        /*
+        String repeat
+        Write a function that accepts an integer n and a string s as parameters, and returns a string of s repeated exactly n times.
+
+Examples (input -> output)
+6, "I"     -> "IIIIII"
+5, "Hello" -> "HelloHelloHelloHelloHello"
+        */
+        function repeatStr (n, s) {
+            let repeatedString = '';
+            while(n > 0){
+                repeatedString += s;
+                n--;
+            }
+            return repeatedString;
+        }
+        /*
+        Sum of odd numbers
+        Given the triangle of consecutive odd numbers:
+
+             1
+          3     5
+       7     9    11
+   13    15    17    19
+21    23    25    27    29
+...
+Calculate the sum of the numbers in the nth row of this triangle (starting at index 1) e.g.
+        */
+        function rowSumOddNumbers(n) {
+            // TODO
+            return n*n*n;
+        }
+        for(let i = 0; i < 5; i++){
+            console.log("*");
+        }
+        /*
+        Sum of two lowest positive integers
+        Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+For example, when an array is passed like [19, 5, 42, 2, 77], the output should be 7.
+
+[10, 343445353, 3453445, 3453545353453] should return 3453455.
+        */
+        function sumTwoSmallestNumbers(numbers) {  
+            //Code here
+            let sum = 0;
+            let num = numbers.sort((a,b)=> a - b);
+            sum = num[0] + num[1];
+            return sum;
+        }
+        //Sort in ascending order
+        function sortAsend(arr) {
+            let a = arr.sort((a,b)=>a - b);
+            console.log(a[3]);
+            return a;
+        }
+        sortAsend([32,65,3,65,91,1,5,3]);
+        console.log(sortAsend([32,65,3,65,91,1,5,3]));
+        let fn = sortAsend([32,65,3,65,91,1,5,3]);
+        console.log(fn[0]);
+        let sn = sortAsend([32,65,3,65,91,1,5,3]);
+        console.log(sn[1]);
+        //Reverse in Descending Order
+        function ReverseArr(arr) {
+            return arr.sort((a,b)=>b-a);
+        }
+        console.log(ReverseArr([32,65,3,65,91,1,5,3]));
+        /*
+        Find the smallest integer in the array
+        Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+        */
+        function findSmallestInt(arr) {
+            //your code here
+            let min = arr[0];
+            for(let i = 0; i < arr.length; i++){
+                if(arr[i] < min) min = arr[i];
+            }
+            return min;
+        }
+        console.log(findSmallestInt([43,65,2,0,2]));
+        /*
+        List Filtering
+        In this kata you will create a function that takes a list of non-negative 
+        integers and strings and returns a new list with the strings filtered out.
+
+Example
+filter_list([1,2,'a','b']) == [1,2]
+filter_list([1,'a','b',0,15]) == [1,0,15]
+filter_list([1,2,'aasf','1','123',123]) == [1,2,123]
+        */
+        function filter_list(l) {
+            // Return a new array with the strings filtered out
+            let newArr = [];
+            for(let i = 0; i < l.length; i++){
+                if(typeof l[i] === 'number'){
+                newArr.push(l[i]);
+                }
+            }
+            return newArr;
+        }
+        /*
+        Isograms
+        An isogram is a word that has no repeating letters, consecutive or 
+        non-consecutive. Implement a function that determines 
+        whether a string that contains only letters is an isogram.
+        Assume the empty string is an isogram. Ignore letter case.
+*/
+//Example: (Input --> Output)
+
+//"Dermatoglyphics" --> true
+//"aba" --> false
+//"moOse" --> false (ignore letter case)
+function isIsogram(str){
+  //...
+  let arr = str.toLowerCase().split('');
+  let newArr = [];
+  let isogram = true;
+  for(let i = 0; i < arr.length; i++){
+    if(!newArr.includes(arr[i])){
+      newArr.push(arr[i]);
+    }
+    else{
+      isogram =  false;
+    }
+    }
+}
+        /*
+        Descending Order
+        Description:
+Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+Examples:
+Input: 42145 Output: 54421
+
+Input: 145263 Output: 654321
+
+Input: 123456789 Output: 987654321
+        */
+        function descendingOrder(n){
+  //...
+            n = n.toString().split('').sort(function(a,b){return b - a}).join('');
+            let newNum = Number(n);
+            return newNum;
+        }
+        /*
+        Deoxyribonucleic acid (DNA) is a chemical found in the nucleus of cells and carries the "instructions" for the development and functioning of living organisms.
+
+If you want to know more: http://en.wikipedia.org/wiki/DNA
+
+In DNA strings, symbols "A" and "T" are complements of each other, as "C" and "G". Your function receives one side of the DNA (string, except for Haskell); you need to return the other complementary side. DNA strand is never empty or there is no DNA at all (again, except for Haskell).
+
+More similar exercise are found here: http://rosalind.info/problems/list-view/ (source)
+*/
+//Example: (input --> output)
+
+//"ATTGC" --> "TAACG"
+//"GTAT" --> "CATA"
+function dnaStrand(dna){
+  let newDNA = "";
+  for(let el = 0; el < dna.length; el++){
+    if(dna[el] === 'A') newDNA += 'T';
+    if(dna[el] === 'T') newDNA += 'A';
+    if(dna[el] === 'C') newDNA += 'G';
+    if(dna[el] === 'G') newDNA += 'C';
+  }
+  
+  return newDNA;
+}
+        /*
+        Shortest Word
+        Description:
+Simple, given a string of words, return the length of the shortest word(s).
+
+String will never be empty and you do not need to account for different data types.
+        */
+        function findShort(s){
+            let arrStr = s.split(' ');
+            let shortest = arrStr[0].length;
+            for(let i = 0; i < arrStr.length; i++)
+                if(arrStr[i].length < shortest) shortest = arrStr[i].length;
+            return shortest;
+        }
+        /*
+        Exes and Ohs
+        Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char.
+
+Examples input/output:
+
+XO("ooxx") => true
+XO("xooxx") => false
+XO("ooxXm") => true
+XO("zpzpzpp") => true // when no 'x' and 'o' is present should return true
+XO("zzoo") => false
+        */
+        function XO(str) {
+    //code here
+  // make the string lowercase because we are case insensitive
+    str = str.toLowerCase();
+
+    // put the string into an array
+    var arrayOfCharacters = str.split("");
+
+    //count the x's
+    var countX = arrayOfCharacters.reduce( function( n, val ) {
+        return n + (val === 'x');
+      }, 0);
+      
+    // count the o's
+    var countO = arrayOfCharacters.reduce( function( n, val ) {
+        return n + (val === 'o');
+      }, 0);
+    
+    // do these numbers match? if so return true and if not return false
+    if ( countX == countO ) {
+      return true;
+    } else {
+      return false;
+    }
+}
+        /*
+        Highest and Lowest
+        Description:
+In this little assignment you are given a string of space separated numbers, and have to return the highest and lowest number.
+
+Examples
+highAndLow("1 2 3 4 5"); // return "5 1"
+highAndLow("1 2 -3 4 5"); // return "5 -3"
+highAndLow("1 9 3 4 -5"); // return "9 -5"
+Notes
+All numbers are valid Int32, no need to validate them.
+There will always be at least one number in the input string.
+Output string must be two numbers separated by a single space, and highest number is first.
+        */
+        function highAndLow(numbers){
+            // ...
+            numbers = numbers.split(' ');
+            return `${Math.max(...numbers)} ${Math.min(...numbers)}`;
+        }
+        /*
+        Disemvowel Trolls
+        Trolls are attacking your comment section!
+
+A common way to deal with this situation is to remove all of the vowels from the trolls' comments, neutralizing the threat.
+
+Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+For example, the string "This website is for losers LOL!" would become "Ths wbst s fr lsrs LL!".
+
+Note: for this kata y isn't considered a vowel.
+        */
+        function disemvowel(str) {
+            let arr = [];
+            for(let i = 0; i < str.length; i++){
+                if(str[i].toLowerCase() == 'a' || str[i].toLowerCase() == 'e' || str[i].toLowerCase() == 'i' || str[i].toLowerCase() == 'o' || str[i].toLowerCase() == 'u'){
+                continue;
+                }
+                arr.push(str[i]);
+            }
+            return arr.join("");
+        }
+        /*
+        Mumbling
+        This time no story, no theory. The examples below show you how to write function accum:
+
+Examples:
+accum("abcd") -> "A-Bb-Ccc-Dddd"
+accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+accum("cwAt") -> "C-Ww-Aaa-Tttt"
+The parameter of accum is a string which includes only letters from a..z and A..Z.
+        */
+        function accum(s) {
+	// your code
+        var letters = s.split(''), words = [];
+
+        for(var i = 0; i < letters.length; i++) {
+            words.push(letters[i].toUpperCase() + Array(i + 1).join(letters[i].toLowerCase()));
+        }
+
+            return words.join('-');
+        }
+        //or
+        function accum(s) {
+            return s
+            .split("")
+            .map((a, i) => a.toUpperCase() + a.toLowerCase().repeat(i))
+            .join("-");
+        }
+        /*
+        Very simple, given a number (integer / decimal / both depending
+        on the language), find its opposite (additive inverse).
+Examples:
+
+1: -1
+14: -14
+-34: 34
+        */
+        function opposite(number) {
+            //your code here
+            return -number;
+        }
+        /*
+        Write a function that accepts an array of 10 integers (between 0 and 9), that returns a string of those numbers in the form of a phone number.
+
+Example
+createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+*/
+function createPhoneNumber(numbers){
+  return numbers.join('').replace(/(\d{3})(\d{3})(\d{4})/,'($1) $2-$3');
+}
+        /*
+        Welcome. In this kata, you are asked to square every digit of a number and concatenate them.
+
+        For example, if we run 9119 through the function, 811181 will come out, because 92 is 81 and 12 is 1. (81-1-1-81)
+
+        Example #2: An input of 765 will/should return 493625 because 72 is 49, 62 is 36, and 52 is 25. (49-36-25)
+
+        Note: The function accepts an integer and returns an integer.
+
+        Happy Coding!
+        */
+        function squareDigits(num){
+            let str = num.toString();
+            let sum = 0;
+            let ans = '';
+            for(let i = 0; i < str.length; i++){
+                sum = Number(str[i]**2);
+                ans += sum;
+            }
+            return Number(ans);
+        }
+        /*
+        You are going to be given a non-empty string. Your job is to return the middle character(s) of the string.
+
+If the string's length is odd, return the middle character.
+If the string's length is even, return the middle 2 characters.
+Examples:*/
+// "test" --> "es"
+// "testing" --> "t"
+// "middle" --> "dd"
+// "A" --> "A"
+        function getMiddle(s) {
+            //Code goes here!
+            let check = s.length % 2 === 0
+            let minMid = s.charAt(s.length/2-1)
+            let mid = s.charAt(s.length/2)
+            
+            return (check == true)? minMid.concat(mid): mid
+        }
+        /*
+        Task
+You get an array of numbers, return the sum of all of the positives ones.
+
+Example
+[1, -4, 7, 12] => 
+1
++
+7
++
+12
+=
+20
+1+7+12=20
+Note
+If there is nothing to sum, the sum is default to 0.
+        */
+function positiveSum(arr) {
+  let sum = 0;
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] > 0){
+      sum += arr[i];
+    }
+  }
+  return sum;
+}
+        /*
+        A square of squares
+You like building blocks. You especially like building blocks that are squares.
+And what you even like more,
+is to arrange them into a square of square building blocks!
+However, sometimes, you can't arrange them into a square.
+Instead, you end up with an ordinary rectangle!
+Those blasted things! If you just had a way to know,
+whether you're currently working in vain… Wait! That's it!
+You just have to check if your number of building blocks is a perfect square.
+Task
+Given an integral number, determine if it's a square number:
+
+In mathematics, a square number or perfect square is an integer that is the square of an integer; in other words, it is the product of some integer with itself.
+
+The tests will always use some integral number, so don't worry about that in dynamic typed languages.
+
+Examples
+-1  =>  false
+ 0  =>  true
+ 3  =>  false
+ 4  =>  true
+25  =>  true
+26  =>  false
+        */
+        var isSquare = function(n){
+        if(n < 0 || typeof n != 'number') return false;
+            const sqrt = Math.sqrt(n);
+        return Number.isInteger(sqrt);
+        }
+        console.log(isSquare(26));
+        /*
+        Create a function that takes an integer
+        as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+        */
+       
+        function evenOrOdd(number) {
+            if(number % 2 == 0) return "Even";
+            else return "Odd";
+        }
+        console.log(evenOrOdd(5));
+        /*
+        Return the number (count) of vowels in the given string.
+        The input string will only consist of lower case letters and/or spaces.
+        */
+        function getCount(str) {
+            let count = 0;
+            for(let i = 0; i < str.length; i++){
+                if(str[i].toLowerCase() == 'a'|| str[i].toLowerCase() == 'e' || str[i].toLowerCase() == 'i' || str[i].toLowerCase() == 'o' || str[i].toLowerCase() == 'u'){
+                    {
+                        count++;
+                    }
+                }
+            }
+            return count;
+        }
+        console.log(getCount('abracadabra'));
+        /*
+        Create Phone Number
+        Write a function that accepts an array of 10 integers (between 0 and 9), 
+        that returns a string of those numbers in the form of a phone number.
+
+        Example
+        createPhoneNumber([1, 2, 3, 4, 5, 6, 7, 8, 9, 0]) // => returns "(123) 456-7890"
+        */
+        function createPhoneNumber(numbers){
+            return numbers.join('').replace(/(\d{3})(\d{3})(\d{4})/,'($1) $2-$3');
+            // return `(${arr[0]}${arr[1]}${arr[2]}) ${arr[3]}${arr[4]}${arr[5]}- ${arr[6]}${arr[7]}${arr[8]}${arr[9]}`;
+        }
+        console.log(createPhoneNumber([1,2,3,4,5,6,7,8,9,0]));
+        console.log(typeof createPhoneNumber([1,2,3,4,5,6,7,8,9,0]));
+    </script>
+</body>
+</html>

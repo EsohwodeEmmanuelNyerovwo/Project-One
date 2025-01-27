@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="./css/formValidate-1.css">
+    <!-- <script defer src="./js/formValidate-1.js"></script> -->
+</head>
+<body>
+    <form action="results.html" method="GET">
+        <div class="container">
+            <div class="wrapper">
+                <label for="fn">Firstname:</label>
+                <input type="text" name="fn" id="fn">
+                <p class="error"></p>
+            </div>
+            <div class="wrapper">
+                <label for="ln">Lastname:</label>
+                <input type="text" name="ln" id="ln">
+                <p class="error"></p>
+            </div>
+            <div class="wrapper">
+                <label for="pwd">Password:</label>
+                <input type="password" name="pwd" id="pwd">
+                <p class="error"></p>
+            </div>
+            <button type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

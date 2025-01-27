@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO</title>
+</head>
+<body>
+    <form action="">
+        <label for="username">Username</label>
+        <input type="text" name="username" id="txt" required placeholder="Enter Username">
+        <button id="btn" type="button" onclick="add()">Send</button>
+        <button id="btn" type="reset" onclick="reset()">Reset</button>
+    </form>
+    <div class="display"></div>
+    <script>
+        /*
+        How To Create Login & Registration Form Using HTML CSS And JavaScript
+        https://youtu.be/a4flX8rekZg
+        */
+       /*
+       Running SQL in an Excel Worksheet
+       https://youtu.be/YDNokNgG4-s
+       */
+      /*
+      Learn React JS in 2 Hour FULL Course | React JS Full Course for Beginners
+      https://youtu.be/j4ekNt0hMCo
+      */
+        let arr = [];
+        function add() {
+            let txt = document.getElementById('txt');
+            let txtValue = txt.value;
+            arr.push(txtValue);
+            console.log(arr);
+            txt.value = '';
+            render();
+        }
+        function render() {
+            let todoList = ''
+            let output = document.querySelector('.display')
+            for(let i = 0; i < arr.length; i++) {
+                const html = `<p>${arr[i]}</p>`;
+                todoList += html;
+            }
+            output.innerHTML = todoList;
+        }
+    </script>
+</body>
+</html>
